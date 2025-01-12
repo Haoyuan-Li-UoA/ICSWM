@@ -1,0 +1,13 @@
+
+source /home/hli962/.virtualenvs/TFB-master/bin/activate
+
+cd /home/hli962/project/TFB-master
+
+nohup python run_all.py > run_all.log 2>&1 &
+
+tar -czvf result.tar.gz /home/hli962/project/TFB-master/result
+
+
+source /newhome/hli962/.virtualenvs/TFB-master/bin/activate
+
+cd /newhome/hli962/TFB

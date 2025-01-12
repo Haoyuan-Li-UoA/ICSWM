@@ -1,0 +1,7 @@
+python ./scripts/run_benchmark.py --config-path "fixed_forecast_config_daily.json" --data-name-list "A_price_all_0.4.csv" --strategy-args '{"horizon":24}' --model-name "darts.TCNModel" --model-hyper-params '{"input_chunk_length": 104, "n_epochs": 100, "output_chunk_length": 24}' --gpus 0  --num-workers 1  --timeout 60000  --save-path "A_price_all_0.4/TCN"
+
+python ./scripts/run_benchmark.py --config-path "fixed_forecast_config_daily.json" --data-name-list "A_price_all_0.4.csv" --strategy-args '{"horizon":36}' --model-name "darts.TCNModel" --model-hyper-params '{"input_chunk_length": 104, "n_epochs": 100, "output_chunk_length": 36}' --gpus 0  --num-workers 1  --timeout 60000  --save-path "A_price_all_0.4/TCN"
+
+python ./scripts/run_benchmark.py --config-path "fixed_forecast_config_daily.json" --data-name-list "A_price_all_0.4.csv" --strategy-args '{"horizon":48}' --model-name "darts.TCNModel" --model-hyper-params '{"input_chunk_length": 104, "n_epochs": 100, "output_chunk_length": 48}' --gpus 0  --num-workers 1  --timeout 60000  --save-path "A_price_all_0.4/TCN"
+
+python ./scripts/run_benchmark.py --config-path "fixed_forecast_config_daily.json" --data-name-list "A_price_all_0.4.csv" --strategy-args '{"horizon":60}' --model-name "darts.TCNModel" --model-hyper-params '{"input_chunk_length": 104, "n_epochs": 100, "output_chunk_length": 60}' --gpus 0  --num-workers 1  --timeout 60000  --save-path "A_price_all_0.4/TCN"
